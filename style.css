@@ -1,0 +1,76 @@
+:root {
+    --backgroundColor: #F3F3F3;
+    --redColor: #D9414E;
+    --greyColor: #AEB9BF;
+    --beigeColor: #DAD8D0;
+    --textColor: #0D0D0D;
+}
+
+@font-face {
+    font-family: 'Sedgwick Ave Display';
+    src: url(fonts/SedgwickAveDisplay-Regular.woff2);
+}
+@font-face {
+    font-family: 'Sedgwick Ave';
+    src: url(fonts/SedgwickAve-Regular.woff2);
+}
+
+img {
+    max-width: 100%;
+}
+
+video {
+    max-width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Sedgwick Ave Display';
+    font-size: clamp(1rem, 1.4cqw, 1.5rem);
+    background-color: var(--beigeColor);
+    margin: 1% 0% 1% 0%;
+    padding: 2%;
+}
+nav a {
+    text-decoration: none;
+    color: var(--textColor);
+}
+nav a:hover {
+    color: var(--redColor);
+}
+
+body {
+    background-color: var(--backgroundColor);
+}
+
+footer {
+    /* background-color: var(--beigeColor); */
+    margin: 1% 0% 1% 0%;
+    /* padding: 10% 0% 2% 2%; */
+}
+
+h1 {
+    font-family: 'Sedgwick Ave Display';
+    font-size: clamp(1.8rem, 4cqw, 5rem);
+    border-bottom: 2px solid var(--redColor);
+}
+
+p {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.beige_color {
+    background-color: var(--beigeColor);
+    padding: 6% 6% 6% 6%;
+}
+
+
+@media (min-width: 600px) {
+    .grid_1-1{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1em;
+    }
+}
