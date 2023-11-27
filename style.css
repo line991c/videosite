@@ -19,19 +19,31 @@ img {
     max-width: 100%;
 }
 
+#fullscreen {
+    width: 100%;
+    height: 100%;
+}
+
 video {
     max-width: 100%;
+}
+
+iframe {
+    max-width: 100%;
+    aspect-ratio: 16/9;
 }
 
 nav ul {
     list-style: none;
     display: flex;
-    justify-content: space-around;
     font-family: 'Sedgwick Ave Display';
     font-size: clamp(1rem, 1.4cqw, 1.5rem);
-    background-color: var(--beigeColor);
-    margin: 1% 0% 1% 0%;
+    margin: 1% 0% 5% 0%;
     padding: 2%;
+    border-bottom: 2px solid var(--redColor);
+}
+nav li {
+    padding-right: 8%;
 }
 nav a {
     text-decoration: none;
@@ -43,18 +55,17 @@ nav a:hover {
 
 body {
     background-color: var(--backgroundColor);
+    background-image: url(imgs/blank-concrete-white-wall-texture-background_1017-15560.avif);
 }
 
 footer {
-    /* background-color: var(--beigeColor); */
-    margin: 1% 0% 1% 0%;
-    /* padding: 10% 0% 2% 2%; */
+    margin: 2% 0% 1% 0%;
+    font-family: 'Sedgwick Ave';
 }
 
 h1 {
     font-family: 'Sedgwick Ave Display';
     font-size: clamp(1.8rem, 4cqw, 5rem);
-    border-bottom: 2px solid var(--redColor);
 }
 
 p {
@@ -63,11 +74,14 @@ p {
 
 .beige_color {
     background-color: var(--beigeColor);
-    padding: 6% 6% 6% 6%;
+    padding: 4% 4% 4% 4%;
 }
 
-
-@media (min-width: 600px) {
+@media (min-width: 650px) {
+    body {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
     .grid_1-1{
         display: grid;
         grid-template-columns: 1fr 1fr;
